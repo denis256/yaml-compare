@@ -1,0 +1,12 @@
+
+key1:
+  key2:
+    config1: "value1"
+    custom1:
+      value2: "qwe"
+  xyz1: "123"
+
+
+key3:
+  config666: "111"
+  config4: "111"
