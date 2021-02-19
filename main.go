@@ -32,7 +32,6 @@ func main() {
 	log.Printf("%+v\n", valuesMap)
 	log.Printf("%+v\n", customValuesMap)
 
-
 	var customFlatMap = make(map[string]string)
 	var valuesFlatMap = make(map[string]string)
 
@@ -57,10 +56,8 @@ func main() {
 		}
 	}
 
-
-
 }
-func flatMap(storage *map[string]string, prefix string, m *map[interface{}]interface{})  {
+func flatMap(storage *map[string]string, prefix string, m *map[interface{}]interface{}) {
 	for k, v := range *m {
 		_, ok := v.(string)
 		if ok {
@@ -72,4 +69,3 @@ func flatMap(storage *map[string]string, prefix string, m *map[interface{}]inter
 
 	}
 }
-
